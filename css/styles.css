@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 :root {
   --Lime: hsl(61, 70%, 52%);
   --Red: hsl(4, 69%, 50%);
@@ -15,38 +16,58 @@
   box-sizing: border-box;
 }
 
-body{
-    background-color: var(--Slate300);
+body {
+  background-color: var(--Slate300);
+  font-size: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
-.contenedor {
+.contenedor{
   display: flex;
-  width: 800px;
-  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 5%;
-  background-color: var(--White);
 }
 
-.texto {
+.texto{
+  background-color: white;
   width: 400px;
-
-  padding: 30px;
+  padding: 1.5rem;
+  border-radius: 50%;
 }
 
-.result {
-  width: 399px;
+.texto__titulo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.result{
   background-color: var(--Slate900);
   color: var(--White);
-  padding: 20px;
+  width: 400px;
+  padding: 1.5rem;
+  border-radius: 0 10px 10px 60px;
 }
 
-/* Textos Creditos */
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  margin-top: 20px;
+
+
+
+
+.result__total{
+  display: none;
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+@media screen and (min-width:805px) {
+  .contenedor{
+    width: 800px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 5%;
+    border-radius: 0 10px 10px 0;
+  }
 }
