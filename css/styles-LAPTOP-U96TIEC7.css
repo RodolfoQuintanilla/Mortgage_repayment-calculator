@@ -155,7 +155,7 @@ h1 {
   font-size: 12px;
   border-radius: 20px;
   display: flex;
-  justify-content: space-around; /* Centra horizontalmente */
+  justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
 
 }
