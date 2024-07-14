@@ -1,7 +1,13 @@
+const moneda = Number(document.querySelector('#moneda').value);
+const year = Number(document.querySelector('#year').value)
+const porcent = Number(document.querySelector('#porcen'))
+
 function reset() {
-    console.log('Recetear');
+    console.log('reset');
 }
 
-function calcular(){
-    console.log('Calcular');
+//validar
+function calcular() {
+   
+
 }
